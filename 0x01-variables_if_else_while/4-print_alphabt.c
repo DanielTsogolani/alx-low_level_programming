@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,14 +7,13 @@
  */
 int main(void)
 {
-	char alphabet_letter;
+	char alphabet_letter = 'a';
 
-	for (alphabet_letter = 'a'; alphabet_letter <= 'z'; alphabet_letter++)
+	for (; alphabet_letter <= 'z'; alphabet_letter++)
 	{
-		if (alphabet_letter !== 'q' || alphabet_letter !== 'e')
-			{ 
-				putchar(alphabet_letter);
-			}
+		if (alphabet_letter == 'e' || alphabet_letter == 'q')
+			continue;
+		putchar(alphabet_letter);
 	}
 	putchar('\n');
 	return (0);
