@@ -1,9 +1,10 @@
-#include "_putchar.h"
+#include "main.h"
+
 
 /**
  * main - Entry point
  *
- * Return: return void
+ * Return: nothing, return void
  */
 
 int main(void)
@@ -17,8 +18,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
-
 }
-
