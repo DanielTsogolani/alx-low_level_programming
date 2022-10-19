@@ -7,7 +7,7 @@
       */
 int print_times_table(int n)
 {
-	      times_table();
+	      print_times_table(2);
 
 			int num;
 			int mult;
