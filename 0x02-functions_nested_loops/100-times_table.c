@@ -7,10 +7,11 @@
       */
 void print_times_table(int n)
 {
-	        print_times_table(2);
+	       /* print_times_table(2); */
 
-			int num, mult, prod;
-
+			int num;
+			int mult;
+			int prod;
 				if (n >= 0 && n <= 15)
 						{
 									for (num = 0; num <= n; num++)
