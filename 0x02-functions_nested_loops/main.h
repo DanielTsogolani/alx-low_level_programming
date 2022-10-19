@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #ifndef _MAIN_H_
+=======
+#ifndef _MAIN_H_
+>>>>>>> edb6d30d19e369dda1ff3b189406614dfc936f59
 #define _MAIN_H_
 
 int _putchar(char c);
@@ -11,7 +15,6 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
-int print_times_table(int n);
 int add(int, int);
 void print_to_98(int n);
 #endif /* _MAIN_H_ */
