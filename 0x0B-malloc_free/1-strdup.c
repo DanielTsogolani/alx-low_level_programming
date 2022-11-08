@@ -1,40 +1,30 @@
-# include "main.h"
-# include <stdlib.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- *str_concat - concat 2 strings.
- *@s1: first string.
- *@s2: second string.
- *Return: pointer to string.
+ *_strdup - allocate a string.
+ *@str: string.
+ *Return: pointer to string if success.
 */
 
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	char *s;
-	int i = 0, j = 0, k = 0;
+	int i;
+	char *str1;
 
-	if (s1 != NULL)
-		for (; s1[i]; i++)
-		;
-	if (s2 != NULL)
-		for (; s2[j]; j++)
-		;
-
-	s = malloc(sizeof(char) * (i + j + 1));
-	if (s == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	while (k < i)
-	{
-		s[k] = s1[k];
-		k++;
-	}
+	for (i = 0; str[i]; i++)
+	;
+	i++;
+	str1 = malloc(sizeof(char) * i);
 
-	while (k < i + j)
-	{
-		s[k] = s2[k - i];
-		k++;
-	}
-	s[k] = '\0';
-	return (s);
+	if (str1 == NULL)
+		return (NULL);
+
+	for (i = 0; str[i] != '\0'; i++)
+		str1[i] = str[i];
+	str1[i] = '\0';
+	return (str1);
 }
